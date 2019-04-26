@@ -1,13 +1,24 @@
+<app-header></app-header>
+<div class="main container">
+	<div class="row">
+		<div class="col">
 <h1>{{title}}</h1>
 <nav>
   <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Rules</a>
-  <a routerLink="">Start Analysis</a>
+  <a routerLink="/rules">Rules</a>
+  <a routerLink="/analysis">Start Analysis</a>
   <a routerLink="">Summary</a>
 </nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
 
+<hr>
+
+<router-outlet></router-outlet>
+
+
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

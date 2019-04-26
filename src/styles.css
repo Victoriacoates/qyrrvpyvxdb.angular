@@ -1,14 +1,14 @@
 /* Master Styles */
 h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+
 }
 h2, h3 {
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
+
+
 body {
   margin: 2em;
 }
@@ -43,9 +43,9 @@ nav a {
   padding: 5px 10px;
   text-decoration: none;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 0px;
   display: inline-block;
-  background-color: #eee;
+  background-color: rgb(178, 222, 240);
   border-radius: 4px;
 }
 nav a:visited, a:link {
@@ -63,6 +63,19 @@ nav a.active {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Extras */
+.footer {
+  background-color: #f5f5f5;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  position: ;  
+  width: 100%;
+}
+
+.row { margin: 20px 0; }
+code { color: darkred!important; }
 
 
 /*
