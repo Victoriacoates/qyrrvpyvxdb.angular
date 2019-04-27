@@ -11,6 +11,7 @@ import { AppRoutingModule }     from './app-routing.module';
 import { HeaderComponent } from './extras/header.component';
 import { FooterComponent } from './extras/footer.component';
 
+
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
@@ -18,6 +19,8 @@ import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 
+import { AnalysisComponent } from './analysis/analysis.component';
+import { SummaryComponent } from './summary/summary.component';
 
 
 
@@ -39,7 +42,10 @@ import { MessagesComponent }    from './messages/messages.component';
     HeaderComponent,
     FooterComponent,
 
+    AnalysisComponent,
+    SummaryComponent,
   
+
 
     AppComponent,
     DashboardComponent,
