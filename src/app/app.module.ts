@@ -3,8 +3,16 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
+
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -30,6 +38,10 @@ import { SummaryComponent } from './summary/summary.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+
+    BrowserAnimationsModule, MatButtonModule, MatCheckboxModule,
+
+    NgbModule.forRoot(),
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

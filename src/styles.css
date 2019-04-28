@@ -1,4 +1,7 @@
 /* Master Styles */
+
+<link href="node_modules/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+
 h1 {
 
 }
@@ -76,6 +79,8 @@ nav a.active {
 
 .row { margin: 20px 0; }
 code { color: darkred!important; }
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css'
 
 
 /*
