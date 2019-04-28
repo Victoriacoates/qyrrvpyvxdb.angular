@@ -10,9 +10,9 @@ import { SummaryComponent } from './summary/summary.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent },
+  { path: 'dashboard', component: DashboardComponent, data: {animation: 'Dashboard'} },
   { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'rules', component: HeroesComponent },
+  { path: 'rules', component: HeroesComponent, data: {animation: 'FilterPage'} },
   
   { path: 'analysis', component: AnalysisComponent },
   { path: 'summary', component: SummaryComponent },

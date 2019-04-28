@@ -1,6 +1,8 @@
 <div id="search-component">
 
-  <input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Search Heroes" />
+  <form>
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Search Heroes" />
+    </form>
 
   <ul class="search-result">
     <li *ngFor="let hero of heroes$ | async" >

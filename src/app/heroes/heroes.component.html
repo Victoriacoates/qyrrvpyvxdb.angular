@@ -17,14 +17,9 @@
 
 
 
-<form>
-  <input #criteria (input)="updateCriteria(criteria.value)" placeholder="Search Heroes" />
-</form>    
 
-
-
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
+<ul class="heroes" [@filterAnimation]="heroTotal">
+  <li *ngFor="let hero of heroes" >
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
