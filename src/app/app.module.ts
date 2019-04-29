@@ -1,6 +1,6 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -8,16 +8,21 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
+import {MaterialModule} from './material-module';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+
 
 
 import { AppRoutingModule }     from './app-routing.module';
 
 import { HeaderComponent } from './extras/header.component';
 import { FooterComponent } from './extras/footer.component';
+
 
 
 import { AppComponent }         from './app.component';
@@ -30,16 +35,18 @@ import { MessagesComponent }    from './messages/messages.component';
 import { AnalysisComponent } from './analysis/analysis.component';
 import { SummaryComponent } from './summary/summary.component';
 
-
+import {DividerComponent} from './extras/divider.component';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule, ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
 
     BrowserAnimationsModule, MatButtonModule, MatCheckboxModule,
+
+    MaterialModule,
 
     NgbModule.forRoot(),
 
@@ -56,9 +63,10 @@ import { SummaryComponent } from './summary/summary.component';
 
     AnalysisComponent,
     SummaryComponent,
+
+    DividerComponent,
+
   
-
-
     AppComponent,
     DashboardComponent,
     HeroesComponent,
