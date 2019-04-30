@@ -53,13 +53,13 @@ body {
 
 .main {
    min-height: 100%;
-   padding-top: 60px;
+   padding-top: 600px;
 }
 
 
 }
 body, input[text], button {
-  color: #888;
+  color: rgb(235, 35, 35);
   font-family: Cambria, Georgia;
 }
 a {
@@ -68,7 +68,7 @@ a {
 }
 button {
   font-family: Arial;
-  background-color: #eee;
+  background-color: rgb(211, 36, 36);
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
