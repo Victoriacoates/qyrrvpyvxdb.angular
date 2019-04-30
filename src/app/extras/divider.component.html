@@ -1,7 +1,35 @@
 <mat-list>
-  <mat-list-item>Item 1. test test</mat-list-item>
+  <mat-list-item>Item 1. in list form</mat-list-item>
   <mat-divider></mat-divider>
-  <mat-list-item>Item 2</mat-list-item>
+  Item 2 in reg form
   <mat-divider></mat-divider>
   <mat-list-item>Item 3</mat-list-item>
 </mat-list>
+<br><BR>
+
+
+<mat-divider [inset]="true"></mat-divider>
+test inset
+<mat-divider [inset]="true"></mat-divider>
+<BR><BR>
+
+
+<mat-list>
+   <h3 mat-subheader>Folders</h3>
+   <mat-list-item *ngFor="let folder of folders; last as last">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <h4 mat-line>{{folder.name}}</h4>
+      <p mat-line class="demo-2"> {{folder.updated}} </p>
+      <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
+   </mat-list-item>
+   <mat-divider></mat-divider>
+   <h3 mat-subheader>Notes</h3>
+   <mat-list-item *ngFor="let hero of heroes">
+      <mat-icon mat-list-icon>noote</mat-icon>
+      <h4 mat-line>{{hero.name}}</h4>
+      <p mat-line class="demo-2"> {{note.updated}} </p>
+   </mat-list-item>
+</mat-list>
+
+^need to import] icons, mat-line class etc
+
