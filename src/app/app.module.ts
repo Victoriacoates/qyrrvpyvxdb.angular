@@ -37,6 +37,10 @@ import { SummaryComponent } from './summary/summary.component';
 
 import {DividerComponent} from './extras/divider.component';
 
+import { InputOverviewExample } from './input-overview-example';
+
+import { SelectMultipleExample} from './wizard/select-multiple-example';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -58,6 +62,10 @@ import {DividerComponent} from './extras/divider.component';
     )
   ],
   declarations: [
+    InputOverviewExample,
+
+    SelectMultipleExample,
+
     HeaderComponent,
     FooterComponent,
 
@@ -66,6 +74,8 @@ import {DividerComponent} from './extras/divider.component';
 
     DividerComponent,
 
+
+  
   
     AppComponent,
     DashboardComponent,

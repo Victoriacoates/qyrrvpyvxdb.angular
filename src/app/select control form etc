@@ -1,0 +1,111 @@
+https://angular.io/api/forms/SelectControlValueAccessor#caveat-option-selection
+
+https://angular.io/api/forms/FormsModule
+
+****Using a multi-select control
+The follow example shows you how to use a multi-select control with a reactive form.****
+      
+const countryControl = new FormControl();
+
+    
+
+<select multiple name="countries" [formControl]="countryControl">
+  <option *ngFor="let country of countries" [ngValue]="country">
+    {{ country.name }}
+  </option>
+</select>
+
+
+
+      
+*****FOR WIZARD?     
+SelectMultipleControlValueAccessor
+
+The ControlValueAccessor for writing multi-select control values and listening to multi-select control changes. The value accessor is used by the FormControlDirective, FormControlName, and NgModel directives.
+
+
+*****FOR EDITOR?   
+DefaultValueAccessor
+
+The default ControlValueAccessor for writing a value and listening to changes on input elements. The accessor is used by the FormControlDirective, FormControlName, and NgModel directives.
+
+
+
+
+SelectControlValueAccessor
+
+
+
+The ControlValueAccessor for writing select control values and listening to select control changes. The value accessor is used by the FormControlDirective, FormControlName, and NgModel directives.
+NgModules
+
+          
+          
+    ReactiveFormsModule
+
+        
+
+          
+          
+    FormsModule
+
+
+    Selectors
+
+    select:not([multiple])[formControlName]
+    select:not([multiple])[formControl]
+    select:not([multiple])[ngModel]
+
+
+Properties
+
+Property 	Description
+value: any 	
+onChange: (_: any) => { } 	
+
+The registered callback function called when a change event occurs on the input element.
+onTouched: () => { } 	
+
+The registered callback function called when a blur event occurs on the input element.
+@Input()
+compareWith: (o1: any, o2: any) => boolean 	Write-only.
+
+Tracks the option comparison algorithm for tracking identities when checking for changes.
+
+
+
+
+
+
+Using select controls in a template-driven form
+
+    import {Component} from '@angular/core';
+     
+    @Component({
+      selector: 'example-app',
+      template: `
+        <form #f="ngForm">
+          <select name="state" ngModel>
+            <option value="" disabled>Choose a state</option>
+            <option *ngFor="let state of states" [ngValue]="state">
+              {{ state.abbrev }}
+            </option>
+          </select>
+        </form>
+        
+         <p>Form value: {{ f.value | json }}</p>
+         <!-- example value: {state: {name: 'New York', abbrev: 'NY'} } -->
+      `,
+    })
+    export class SelectControlComp {
+      states = [
+        {name: 'Arizona', abbrev: 'AZ'},
+        {name: 'California', abbrev: 'CA'},
+        {name: 'Colorado', abbrev: 'CO'},
+        {name: 'New York', abbrev: 'NY'},
+        {name: 'Pennsylvania', abbrev: 'PA'},
+      ];
+    }
+
+        
+

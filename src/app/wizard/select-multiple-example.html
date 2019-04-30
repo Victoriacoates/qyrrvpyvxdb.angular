@@ -1,0 +1,14 @@
+<mat-form-field>
+  <mat-label>Toppings</mat-label>
+  <mat-select [formControl]="toppings" multiple>
+    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+ Multiple selection
+
+<mat-select> defaults to single-selection mode, but can be configured to allow multiple selection by setting the multiple property. This will allow the user to select multiple values at once. When using the <mat-select> in multiple selection mode, its value will be a sorted list of all selected values rather than a single value.
+
+
+  not working...
