@@ -41,6 +41,11 @@ import { InputOverviewExample } from './input-overview-example';
 
 import { SelectMultipleExample} from './wizard/select-multiple-example';
 
+
+
+import {TableBasicExample} from './table-basic-example';
+
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -73,6 +78,8 @@ import { SelectMultipleExample} from './wizard/select-multiple-example';
     SummaryComponent,
 
     DividerComponent,
+
+    TableBasicExample,
 
 
   
