@@ -18,7 +18,8 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 
 
-import { AppRoutingModule }     from './app-routing.module';
+import { AppRoutingModule, Routes }     from './app-routing.module';
+import { MdTabsModule } from '@angular/material';
 
 import { HeaderComponent } from './extras/header.component';
 import { FooterComponent } from './extras/footer.component';
@@ -50,12 +51,15 @@ import {TableBasicExample} from './table-basic-example';
   imports: [
     BrowserModule,
     FormsModule, ReactiveFormsModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     HttpClientModule,
+
+    
 
     BrowserAnimationsModule, MatButtonModule, MatCheckboxModule,
 
     MaterialModule,
+
 
     NgbModule.forRoot(),
 

@@ -1,6 +1,11 @@
 
 
+
+
+
+
 <mat-toolbar color="primary" fixed-top>
+  <mat-toolbar-row>
 <span> A</span>
 
 
@@ -16,16 +21,64 @@
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
+</mat-toolbar-row>
+
+
+
+<mat-toolbar-row color="warn">
+  
+
+    <nav>
+
+
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+  <a routerLink="/rules" routerLinkActive="active" >Rules</a>
+  <a routerLink="/analysis" routerLinkActive="active">Start Analysis</a>
+  <a routerLink="/summary" >Summary 2</a>
+  summary
+   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+
+</nav>
+
+  </mat-toolbar-row>
 
 
 </mat-toolbar> 
 
 
-<mat-tab-group>
-<mat-tab label="First"> Content 1 </mat-tab>
-<mat-tab label="Second"> Content 2 </mat-tab>
-<mat-tab label="Third"> Content 3 </mat-tab>
-</mat-tab-group>
+
+
+<ul class="nav nav-tabs">
+
+
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/rules">Rules</a>
+  <a routerLink="/analysis">Start Analysis</a>
+  <a routerLink="/summary">Summary 2</a>
+  summary
+   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+
+</ul>
+
+
+	
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+  *ngFor="let link of navLinks"
+  [routerLink]="link.path"
+  routerLinkActive #rla="routerLinkActive"
+  [active]="rla.isActive">
+ {{link.label}}
+</a>
+</nav>
+<router-outlet></router-outlet>
+
+
+
 
 
 
@@ -36,10 +89,6 @@
 
 
 <nav>
-
-
-
-
 
 
   <a routerLink="/dashboard">Dashboard</a>
