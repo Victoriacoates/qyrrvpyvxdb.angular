@@ -9,12 +9,13 @@ import { Router } from '@angular/router';
   
 })
 export class AppComponent {
-  title = 'Compliance Engine';
 
   links = ['Home', 'Rules', 'Analyze'];
   activeLink = this.links[0];
   
 }
+
+
 
 
 /*

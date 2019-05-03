@@ -34,11 +34,11 @@
 .active {
 
 color: rgb(248, 9, 9) !important;
-
+  background-color: rgb(28, 197, 70);
 
 }
 
-[active]="rla.isActive"
+
 
 /* AppComponent's private CSS styles */
 h1 {
