@@ -12,12 +12,30 @@
   <button class="delete" title="delete hero"
       (click)="delete(this.hero)">delete</button>
 
+<button (click)="deleteHero()">Delete hero</button>
 
 <a href="#" class="btn btn-primary">Find Out More!</a>
 
 
 
+<button (click)="onSave()">Save</button>
+
+
+<h4>myClick is an event on the custom ClickDirective:</h4>
+<button (myClick)="clickMessage=$event" clickable>click with myClick</button>
+{{clickMessage}}
+
+
+<input [value]="currentItem.name"
+       (input)="currentItem.name=$event.target.value" >
+
+
+
+<form #heroForm (ngSubmit)="onSubmit(heroForm)"> ... </form>
+
 </div>
+
+
 
 <form>
   <div class="form-group">

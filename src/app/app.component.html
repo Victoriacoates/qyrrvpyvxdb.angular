@@ -21,6 +21,16 @@
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
+
+    <mat-menu #appMenu="matMenu">
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item>Help</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+
 </mat-toolbar-row>
 
 
@@ -31,10 +41,10 @@
     <nav>
 
 
-  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-  <a routerLink="/rules" routerLinkActive="active" >Rules</a>
+  <a routerLink="/dashboard" routerLinkActive="'active fluffy'">Dashboard</a>
+  <a routerLink="/rules" routerLinkActive #rla="routerLinkActive" >Rules</a>
   <a routerLink="/analysis" routerLinkActive="active">Start Analysis</a>
-  <a routerLink="/summary" >Summary 2</a>
+  <a routerLink="/summary" routerLinkActive="active">Summary 2</a>
   summary
    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
@@ -52,7 +62,7 @@
 
 <ul class="nav nav-tabs">
 
-
+<nav>
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/rules">Rules</a>
   <a routerLink="/analysis">Start Analysis</a>
@@ -60,7 +70,7 @@
   summary
    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-
+</nav>
 
 </ul>
 
@@ -76,6 +86,22 @@
 </a>
 </nav>
 <router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+<nav mat-tab-nav-bar [backgroundColor]="primary">
+  <a mat-tab-link *ngFor="let link of links"
+     (click)="activeLink = link"
+     [active]="activeLink == link"> {{link}} </a>
+ 
+</nav>
+
+
 
 
 
@@ -106,7 +132,9 @@
 <br>
 <mat-divider></mat-divider>
 
-<router-outlet></router-outlet>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
 
 
 		</div>
