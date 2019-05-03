@@ -61,49 +61,34 @@
 
 
 	
-<nav mat-tab-nav-bar>
-  <a mat-tab-link
-  *ngFor="let link of navLinks"
-  [routerLink]="link.path"
-  routerLinkActive #rla="routerLinkActive"
-  [active]="rla.isActive">
- {{link.label}}
-</a>
-</nav>
-<router-outlet></router-outlet>
+
 
 <div class=container>
 
-<nav mat-tab-nav-bar mat-align-tabs="center">
+<nav mat-tab-nav-bar>
   <a mat-tab-link     
-     routerLink="/dashboard"  routerLinkActive
-           #rla="routerLinkActive" [active]="rla.isActive" 
-           >
+     routerLink="/dashboard"  
+     routerLinkActive="mat-tab-link-active">
      
     <span class="">Home</span>    
   </a>
    <a mat-tab-link     
      routerLink="/rules" 
-     routerLinkActive
-           #rla="routerLinkActive" [active]="rla.isActive" 
-           
+    routerLinkActive="mat-tab-link-active"
            >
        
     <span class="">Rules</span>   
   </a>
 
   <a mat-tab-link     
-     routerLink="/analysis"  routerLinkActive
-           #rla="routerLinkActive" [active]="rla.isActive" 
-           
+     routerLink="/analysis"  routerLinkActive="mat-tab-link-active"
            >
     <span class="">Analyze</span>   
   </a>
 
   <a mat-tab-link     
      routerLink="/summary"  
-
-           
+     routerLinkActive="mat-tab-link-active"
   
            >
     <span class="">Results</span>   
