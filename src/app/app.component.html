@@ -13,7 +13,7 @@
  <a class="navbar-brand" >  <img src="" alt="">
         IBM logo</a>
 
-  <a class="navbar-brand mr-1" href="index.html"> Blockchain Compliance Engine</a>
+  <a class="navbar-brand mr-1"> Blockchain Compliance Engine</a>
 
 <span class="example-fill-remaining-space"></span>  
 
@@ -40,7 +40,9 @@
 
 
 
+
 <ul class="nav nav-tabs">
+
 
 <nav>
   <a routerLink="/dashboard">Dashboard</a>
@@ -48,11 +50,13 @@
   <a routerLink="/analysis" routerLinkActive="active">Start Analysis</a>
   <a routerLink="/summary">Summary 2</a>
   summary
-   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+ 
  
 </nav>
 
 </ul>
+
+
 
 
 	
@@ -69,22 +73,27 @@
 
 
 
-<nav mat-tab-nav-bar>
+<nav mat-tab-nav-bar mat-align-tabs="center">
   <a mat-tab-link     
-     routerLink="/dashboard"  routerLinkActive #rla="routerLinkActive" [active]="this.link" (click)="rla.isActive">
+     routerLink="/dashboard"  routerLinkActive
+           #rla="routerLinkActive" [active]="rla.isActive" 
+           >
      
     <span class="">Home</span>    
   </a>
    <a mat-tab-link     
-     routerLink="/rules" routerLinkActive="mat-tab-link-active"
-           #rla="routerLinkActive">
+     routerLink="/rules" 
+     routerLinkActive
+           #rla="routerLinkActive" [active]="rla.isActive" 
+           
+           >
        
     <span class="">Rules</span>   
   </a>
 
   <a mat-tab-link     
      routerLink="/analysis"  routerLinkActive
-           #rla="routerLinkActive" [active]="rla.isActive" (click)="rla.isActive"
+           #rla="routerLinkActive" [active]="rla.isActive" 
            
            >
     <span class="">Analyze</span>   
@@ -92,9 +101,10 @@
 
   <a mat-tab-link     
      routerLink="/summary"  
-     routerLinkActive
-           #rla="routerLinkActive"  
+  routerLinkActive
+           #rla="routerLinkActive" [active]="rla.isActive" 
            
+  
            >
     <span class="">Results</span>   
   </a>
@@ -109,9 +119,6 @@
      [active]="activeLink == link"> {{link}} </a>
  
 </nav>
-
-
-
 
 
 
