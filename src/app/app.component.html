@@ -42,7 +42,7 @@
 
 <ul class="nav nav-tabs">
 
-
+<div class=container>
 <nav>
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/rules">Rules</a>
@@ -52,6 +52,8 @@
  
  
 </nav>
+
+</div>
 
 </ul>
 
@@ -70,7 +72,7 @@
 </nav>
 <router-outlet></router-outlet>
 
-
+<div class=container>
 
 <nav mat-tab-nav-bar mat-align-tabs="center">
   <a mat-tab-link     
@@ -100,8 +102,7 @@
 
   <a mat-tab-link     
      routerLink="/summary"  
-  routerLinkActive
-           #rla="routerLinkActive" [active]="rla.isActive" 
+
            
   
            >
@@ -129,18 +130,7 @@
 <h1></h1>
 
 
-<nav>
 
-
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/rules">Rules</a>
-  <a routerLink="/analysis">Start Analysis</a>
-  <a routerLink="/summary">Summary 2</a>
-  summary
- 
-
-
-</nav>
 
 
 <br>
