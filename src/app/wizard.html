@@ -1,5 +1,5 @@
 
-
+<div class="example-container mat-elevation-z8">
 <mat-horizontal-stepper [linear]="isLinear" #stepper>
   <mat-step [stepControl]="firstFormGroup">
 
@@ -21,7 +21,9 @@
 
 
       <div>
-        <button mat-button matStepperNext>Next</button>
+       
+
+        <button type="button" class="btn btn-primary" matStepperNext>Next</button>
       </div>
     </form>
   </mat-step>
@@ -59,8 +61,12 @@
 
       
       <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Start Analysis</button>
+        <button mat-button matStepperPrevious class="btn btn-outline-secondary">Back</button><span> </span>
+
+        
+
+          <button type="button" class="btn btn-primary" matStepperNext>Start Analysis</button>
+      
       </div>
 
 

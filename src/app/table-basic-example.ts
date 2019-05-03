@@ -11,7 +11,7 @@ import {MatTableDataSource} from '@angular/material';
 })
 export class TableBasicExample {
   highlightedRows = [];
-  displayedColumns = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns = ['position', 'name', 'weight', ];
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
 }
 
