@@ -7,9 +7,9 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'wizard',
   templateUrl: 'wizard.html',
-  styleUrls: 
+ styleUrls: ['wizard.css'],
 })
-export class StepperOverviewExample implements OnInit {
+export class Wizard implements OnInit {
   isLinear = false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;

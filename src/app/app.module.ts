@@ -46,6 +46,7 @@ import { SelectMultipleExample} from './wizard/select-multiple-example';
 
 import {TableBasicExample} from './table-basic-example';
 
+import { Wizard } from './wizard';
 
 @NgModule({
   imports: [
@@ -84,8 +85,8 @@ import {TableBasicExample} from './table-basic-example';
     DividerComponent,
 
     TableBasicExample,
-
-
+    Wizard,
+    
   
   
     AppComponent,
