@@ -77,8 +77,20 @@
    
    <legend>Analysis Progress</legend>
 
+
+<mat-spinner></mat-spinner>
+<div class="spinner-border text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+
+
+
     <div>
-      <button mat-button matStepperPrevious>Back</button>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+   
+   
       <button mat-button (click)="stepper.reset()">Reset</button>
     </div>
   </mat-step>
