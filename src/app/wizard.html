@@ -5,8 +5,10 @@
 
 
     <form [formGroup]="firstFormGroup">
-      <ng-template matStepLabel>Fill out your name</ng-template>
+      <ng-template matStepLabel>
+       </ng-template>
 
+<legend> Select rules to include for analysis</legend><BR>
 
 <table-basic-example></table-basic-example>
 
@@ -26,7 +28,9 @@
 
   
   <mat-step [stepControl]="secondFormGroup">
-    
+        <ng-template matStepLabel>
+
+        </ng-template>
     
     <fieldset class="form-group">
       <legend>Asset Selection</legend>
@@ -51,11 +55,12 @@
     
     <form [formGroup]="secondFormGroup">
      
+      <legend>Analysis Progress</legend>
       
       
       <div>
         <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
+        <button mat-button matStepperNext>Start Analysis</button>
       </div>
 
 
@@ -64,8 +69,12 @@
 
   </mat-step>
   <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
-    You are now done.
+    <ng-template matStepLabel>
+
+    </ng-template>
+   
+   
+
     <div>
       <button mat-button matStepperPrevious>Back</button>
       <button mat-button (click)="stepper.reset()">Reset</button>
