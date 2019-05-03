@@ -1,3 +1,8 @@
+
+
+
+
+
 .example-fill-remaining-space {
   /* This fills the remaining space, by using flexbox. 
      Every toolbar row uses a flexbox row layout. */
@@ -8,8 +13,10 @@
 
 color: rgb(248, 9, 9) !important;
 
+
 }
 
+[active]="rla.isActive"
 
 /* AppComponent's private CSS styles */
 h1 {

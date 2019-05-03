@@ -35,26 +35,6 @@
 
 
 
-<mat-toolbar-row color="warn">
-  
-
-    <nav>
-
-
-  <a routerLink="/dashboard" routerLinkActive="'active fluffy'">Dashboard</a>
-  <a routerLink="/rules" routerLinkActive #rla="routerLinkActive" >Rules</a>
-  <a routerLink="/analysis" routerLinkActive="active">Start Analysis</a>
-  <a routerLink="/summary" routerLinkActive="active">Summary 2</a>
-  summary
-   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-
-
-</nav>
-
-  </mat-toolbar-row>
-
-
 </mat-toolbar> 
 
 
@@ -65,7 +45,7 @@
 <nav>
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/rules">Rules</a>
-  <a routerLink="/analysis">Start Analysis</a>
+  <a routerLink="/analysis" routerLinkActive="active">Start Analysis</a>
   <a routerLink="/summary">Summary 2</a>
   summary
    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
@@ -89,8 +69,37 @@
 
 
 
+<nav mat-tab-nav-bar>
+  <a mat-tab-link     
+     routerLink="/dashboard"  routerLinkActive #rla="routerLinkActive" [active]="this.link" (click)="rla.isActive">
+     
+    <span class="">Home</span>    
+  </a>
+   <a mat-tab-link     
+     routerLink="/rules" routerLinkActive="mat-tab-link-active"
+           #rla="routerLinkActive">
+       
+    <span class="">Rules</span>   
+  </a>
 
+  <a mat-tab-link     
+     routerLink="/analysis"  routerLinkActive
+           #rla="routerLinkActive" [active]="rla.isActive" (click)="rla.isActive"
+           
+           >
+    <span class="">Analyze</span>   
+  </a>
 
+  <a mat-tab-link     
+     routerLink="/summary"  
+     routerLinkActive
+           #rla="routerLinkActive"  
+           
+           >
+    <span class="">Results</span>   
+  </a>
+
+</nav>
 
 
 
