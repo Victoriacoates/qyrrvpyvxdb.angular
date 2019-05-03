@@ -6,9 +6,18 @@
 
     <form [formGroup]="firstFormGroup">
       <ng-template matStepLabel>Fill out your name</ng-template>
+
+
+<table-basic-example></table-basic-example>
+
+
       <mat-form-field>
         <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
       </mat-form-field>
+
+
+
+
       <div>
         <button mat-button matStepperNext>Next</button>
       </div>
@@ -17,16 +26,42 @@
 
   
   <mat-step [stepControl]="secondFormGroup">
+    
+    
+    <fieldset class="form-group">
+      <legend>Asset Selection</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+          Analyze current state (world state)
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+          Analyze whole ledger
+        </label>
+      </div>
+
+    
+    </fieldset>
+
+    
+    
+    
     <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Fill out your address</ng-template>
-      <mat-form-field>
-        <input matInput placeholder="Address" formControlName="secondCtrl" required>
-      </mat-form-field>
+     
+      
+      
       <div>
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </div>
+
+
+
     </form>
+
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>Done</ng-template>
