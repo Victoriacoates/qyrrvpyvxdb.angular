@@ -5,8 +5,8 @@
 }
 .mat-tab-link-active,
 .mat-tab-label-active {
-    background-color: rgb(129, 177, 209) ;
-    color: #D5FEFF;
+    background-color: rgb(214, 223, 248) ;
+    color: rgb(5, 28, 29);
     border: 0px solid #6B7F7F;
     font-weight: bold;
 }

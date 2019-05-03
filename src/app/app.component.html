@@ -6,11 +6,8 @@
 
 <mat-toolbar color="primary" fixed-top>
   <mat-toolbar-row>
-<span> A</span>
 
-
-
- <a class="navbar-brand" >  <img src="" alt="">
+ <a class="navbar-brand" >  <img src="https://eig.org/wp-content/uploads/2018/03/ibm.png" alt="" height=49>
         IBM logo</a>
 
   <a class="navbar-brand mr-1"> Blockchain Compliance Engine</a>
@@ -40,32 +37,16 @@
 
 
 
-<ul class="nav nav-tabs">
-
-<div class=container>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/rules">Rules</a>
-  <a routerLink="/analysis" routerLinkActive="active">Start Analysis</a>
-  <a routerLink="/summary">Summary 2</a>
-  summary
- 
- 
-</nav>
-
-</div>
-
-</ul>
-
 
 
 
 	
 
 
-<div class=container>
 
 <nav mat-tab-nav-bar>
+  <div class=container>
+
   <a mat-tab-link     
      routerLink="/dashboard"  
      routerLinkActive="mat-tab-link-active">
@@ -93,17 +74,13 @@
            >
     <span class="">Results</span>   
   </a>
+</div>
 
 </nav>
 
 
 
-<nav mat-tab-nav-bar [backgroundColor]="primary">
-  <a mat-tab-link *ngFor="let link of links"
-     (click)="activeLink = link"
-     [active]="activeLink == link"> {{link}} </a>
- 
-</nav>
+
 
 
 
@@ -117,9 +94,6 @@
 
 
 
-
-<br>
-<mat-divider></mat-divider>
 
 <div [@routeAnimation]="getAnimationData(routerOutlet)">
   <router-outlet #routerOutlet="outlet"></router-outlet>
