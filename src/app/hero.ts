@@ -1,6 +1,9 @@
 export class Hero {
   id: number;
   name: string;
+  description: string;
+  jsdefinition: string;
+  assets: string;
 }
 
 
