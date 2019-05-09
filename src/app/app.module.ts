@@ -48,6 +48,10 @@ import {TableBasicExample} from './table-basic-example';
 
 import { Wizard } from './wizard';
 
+import { RulesAnalysis } from './rules-analysis';
+
+
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -94,7 +98,8 @@ import { Wizard } from './wizard';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    RulesAnalysis,
   ],
   bootstrap: [ AppComponent ]
 })
