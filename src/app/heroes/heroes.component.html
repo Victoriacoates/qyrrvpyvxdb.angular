@@ -19,7 +19,7 @@
 
 
 
-<ul class="heroes" [@filterAnimation]="heroTotal">
+<ul class="heroes" >
   <li *ngFor="let hero of heroes" >
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
@@ -32,12 +32,70 @@
 
 
 
+mat edit
+<ul class="heroes">
+  
+<mat-list *ngFor="let hero of heroes">
+
+ <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    
+  </mat-list>
+  </ul>
+
+
+
+mat edit 2
+<ul class="heroes">
+  
+<mat-nav-list>
+  <mat-list-item *ngFor="let hero of heroes">
+    
+     <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+
+  </mat-list-item>
+</mat-nav-list>
+
+</ul>
+
+
+wizard
+
+
+<ul class="heroes">
+<mat-selection-list  [(ngModel)]="selectedOptions" (ngModelChange)="onNgModelChange($event)">
+    <mat-list-option *ngFor="let hero of heroes" [value]="hero.name">
+
+       <a >
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+
+    
+    </mat-list-option>
+</mat-selection-list>
+</ul>
+
+<div>
+  Selected rules: <h2>{{ selectedOptions | json }}</h2>
+</div>
+
+
+
+
+
+
+
+
+
 a
 <ul class="heroes">
 
   <li *ngFor="let hero of heroes"
     [class.selected]="hero === selectedHero" 
-    (click)="onSelect(hero)" multiple="true">
+    (click)="onSelect(hero)" >
     <span class="badge">{{hero.id}}</span> {{hero.name}}
   </li>
 
@@ -53,67 +111,9 @@ matches other - need to make multi-select + change colors
 </div>
 
 
-mat 1
-<div>
-  Selected: {{ selectedOptions | json }}
-</div>
-
-<mat-selection-list>
-  <mat-list-option *ngFor="let hero of heroes"
-    
-   (click)="onAreaListControlChanged(list)" [value]="hero.name">
-            {{hero.name}}
-    </mat-list-option>
-</mat-selection-list>
 
 
 
-mat
-<mat-selection-list>
-  <mat-list-option *ngFor="let hero of heroes">
-    {{hero.name}}
-  </mat-list-option>
-</mat-selection-list>
-
-<p>
-  Options selected: {{heroes.selectedOptions.selected.length}}
-</p>
-
-
-
-
-1
-<ul class="heroes" multiple >
-
-  <mat-option *ngFor="let hero of heroes" 
-      (click)="onSelect(hero)"
-        [class.selected]="hero === selectedHero" multiple = "true"
-  >
-    
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    
-</mat-option>
-
-
-</ul>
-
-
-
-
-
-3
-<ul class="heroes">
-
-<li>
-  <mat-option *ngFor="let hero of heroes" >
-    
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    
-</mat-option>
-</li>
-
-
-</ul>
 
 
 <!-- 

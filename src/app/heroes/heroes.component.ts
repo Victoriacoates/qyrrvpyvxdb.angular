@@ -86,11 +86,6 @@ onSelect(hero: Hero): void {
   }
 
 
-  onAreaListControlChanged(list){
-    // determine selected options
-    this.selectedOptions = list.selectedOptions.selected.map(item => item.value);
-  }
-
 updateCriteria(criteria: string) {
     criteria = criteria ? criteria.trim() : '';
 
