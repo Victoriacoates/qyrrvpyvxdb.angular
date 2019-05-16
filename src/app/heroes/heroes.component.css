@@ -3,6 +3,15 @@
 mat-list-option {
   margin: 10px;
  background-color: #eee;
+ 
+   float: right;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+      font-size: small;
+
 }
 
 mat-list-option[aria-selected="true"] {
@@ -13,15 +22,16 @@ mat-list-option[aria-selected="true"] {
 mat-list-item {
   margin: 10px;
  background-color: #eee;
+
+ position: relative;
+
+  width: 450px;
+    display: inline-block;
+  font-size: small;
 }
 
 
 
-
-.selected {
-  background-color: rgb(207, 220, 212) !important;
-  color: white;
-}
 
 
 
@@ -39,7 +49,9 @@ mat-list-item {
   background-color: rgb(238, 238, 238);
   margin: .5em;
   padding: .3em 0;
+
   height: 2.4em;
+
   border-radius: 4px;
 }
 
@@ -54,7 +66,8 @@ mat-list-item {
   text-decoration: none;
   position: relative;
   display: block;
-  width: 250px;
+  
+  width: 450px;
  
 }
 
