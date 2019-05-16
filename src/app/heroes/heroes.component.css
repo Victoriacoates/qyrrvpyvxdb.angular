@@ -4,13 +4,20 @@ mat-list-option {
   margin: 10px;
  background-color: #eee;
  
+   margin: .5em;
+  padding: .3em 0;
+
+  height: 2.4em;
+
+  border-radius: 4px;
+
    float: right;
      display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
 
-      font-size: small;
+
 
 }
 
@@ -25,7 +32,7 @@ mat-list-item {
 
  position: relative;
 
-  width: 450px;
+  width: 4500px;
     display: inline-block;
   font-size: small;
 }
@@ -40,7 +47,7 @@ mat-list-item {
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
-  width: 25em;
+  width: 50em;
   
 }
 .heroes li {
@@ -53,6 +60,8 @@ mat-list-item {
   height: 2.4em;
 
   border-radius: 4px;
+
+
 }
 
 .heroes li:hover {
@@ -62,12 +71,15 @@ mat-list-item {
 }
 
 .heroes a {
+  
+  
+
   color: rgb(0, 0, 0);
   text-decoration: none;
   position: relative;
   display: block;
-  
-  width: 450px;
+
+  /* width: 450px; */
  
 }
 
