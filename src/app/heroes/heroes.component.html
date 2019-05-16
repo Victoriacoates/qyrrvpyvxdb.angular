@@ -30,7 +30,11 @@
 </ul>
 
 
-<ul class="heroes" multiple>
+
+
+
+1
+<ul class="heroes" multiple >
 
   <mat-option *ngFor="let hero of heroes" >
     
@@ -39,6 +43,33 @@
 </mat-option>
 
 
+</ul>
+
+2
+<ul class="heroes" multiple>
+
+  <li *ngFor="let hero of heroes" >
+    
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    
+</li>
+
+
+</ul>
+
+3
+<ul class="heroes">
+
+<li>
+  <mat-option *ngFor="let hero of heroes" >
+    
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    
+</mat-option>
+</li>
+
+
+</ul>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
