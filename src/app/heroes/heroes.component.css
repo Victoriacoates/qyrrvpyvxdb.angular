@@ -4,7 +4,7 @@ mat-list-option {
   margin: 10px;
  background-color: #eee;
  
-   margin: .5em;
+ 
   padding: .3em 0;
 
   height: 2.4em;
@@ -32,9 +32,20 @@ mat-list-item {
 
  position: relative;
 
-  width: 4500px;
-    display: inline-block;
-  font-size: small;
+
+  padding: .3em 0;
+
+  height: 2.4em;
+
+  border-radius: 4px;
+
+   float: right;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+ 
 }
 
 
