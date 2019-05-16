@@ -48,7 +48,7 @@ export class HeroesComponent implements OnInit {
 
 heroes: Hero[];
 
-   
+     selectedHero: Hero;
 
 
   constructor(private heroService: HeroService) { }
@@ -61,6 +61,7 @@ heroes: Hero[];
     this.heroService.getHeroes()
     .subscribe(heroes => this.heroes = heroes);
   }
+
 
   add(name: string): void {
     name = name.trim();
@@ -80,6 +81,15 @@ heroes: Hero[];
   }
 
 
+onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
+
+
+  onAreaListControlChanged(list){
+    // determine selected options
+    this.selectedOptions = list.selectedOptions.selected.map(item => item.value);
+  }
 
 updateCriteria(criteria: string) {
     criteria = criteria ? criteria.trim() : '';

@@ -32,11 +32,63 @@
 
 
 
+a
+<ul class="heroes">
+
+  <li *ngFor="let hero of heroes"
+    [class.selected]="hero === selectedHero" 
+    (click)="onSelect(hero)" multiple="true">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+
+</ul>
+matches other - need to make multi-select + change colors
+
+
+
+<div *ngIf="selectedHero">
+
+  Selected: <h2>{{selectedHero.name}} </h2>
+ 
+</div>
+
+
+mat 1
+<div>
+  Selected: {{ selectedOptions | json }}
+</div>
+
+<mat-selection-list>
+  <mat-list-option *ngFor="let hero of heroes"
+    
+   (click)="onAreaListControlChanged(list)" [value]="hero.name">
+            {{hero.name}}
+    </mat-list-option>
+</mat-selection-list>
+
+
+
+mat
+<mat-selection-list>
+  <mat-list-option *ngFor="let hero of heroes">
+    {{hero.name}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Options selected: {{heroes.selectedOptions.selected.length}}
+</p>
+
+
+
 
 1
 <ul class="heroes" multiple >
 
-  <mat-option *ngFor="let hero of heroes" >
+  <mat-option *ngFor="let hero of heroes" 
+      (click)="onSelect(hero)"
+        [class.selected]="hero === selectedHero" multiple = "true"
+  >
     
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     
@@ -45,17 +97,9 @@
 
 </ul>
 
-2
-<ul class="heroes" multiple>
-
-  <li *ngFor="let hero of heroes" >
-    
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    
-</li>
 
 
-</ul>
+
 
 3
 <ul class="heroes">
@@ -70,6 +114,7 @@
 
 
 </ul>
+
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
