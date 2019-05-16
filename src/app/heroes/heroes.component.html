@@ -30,6 +30,16 @@
 </ul>
 
 
+<ul class="heroes" multiple>
+
+  <mat-option *ngFor="let hero of heroes" >
+    
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    
+</mat-option>
+
+
+
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
