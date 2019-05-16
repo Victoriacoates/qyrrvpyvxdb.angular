@@ -1,18 +1,75 @@
 <div *ngIf="hero">
-  <h2>{{hero.name | uppercase}} Details</h2>
+  <h2>Rule Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
   <div class="container">
-    <label>Name:
+    <label>Name<br>
       <input [(ngModel)]="hero.name" placeholder="name"/>
     </label>
   </div>
 
 
+<div class="form-group">
+       
+         <label>Rule Definition:</label><br>
+          <small class="text-muted">The rule is defined in JavaScript. The editor provides highlighting and syntax checking</small>
 
-<div class="container">
-<label>Description:<input [(ngModel)]="hero.description" placeholder="Add a description here"/>
+      <textarea class="form-control" id="exampleTextarea" rows="3" >
+{{hero.jsdefinition}}
+
+      </textarea>
+
+    </div> 
+
+
+
+ <div class="form-group">
+    <label>Description: <input [(ngModel)]="hero.description" placeholder="Add a description here"/>
+    </label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div> -->
+
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+
+    <label>Address 2 </label>
+  <input [(ngModel)]="hero.description" placeholder="Add a description here tst**"/>
+   
+  </div>
+</form>
+
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+<label>Description: <input [(ngModel)]="hero.description" placeholder="Add a description here"/>
     </label>
 </div>
+
+<div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+
+
+   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+  </div>
+</form>
 
 
 <div class="container">

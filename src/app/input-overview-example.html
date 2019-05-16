@@ -1,7 +1,37 @@
+
+  <!-- <div class="container">
+    <label>Name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </div>
+
+<div class="container">
+<label>Description:<input [(ngModel)]="hero.description" placeholder="Add a description here"/>
+    </label>
+</div> -->
+
+<mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+  </mat-form-field>
+
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput [(ngModel)]="hero.description" placeholder="Description***" >
+  </mat-form-field>
+</form>
+
+<!-- <div class="container">
+<label>Description:<input [(ngModel)]="hero.description" placeholder="Add a description here"/>
+    </label>
+</div> -->
+
+
 <form class="example-form">
   <mat-form-field class="example-full-width">
     <input matInput placeholder="Description" value="Rule details">
   </mat-form-field>
+
 
   <mat-form-field class="example-full-width">
     <textarea matInput placeholder="Rule Definition" rows="5" value="JavaScript code"></textarea>
