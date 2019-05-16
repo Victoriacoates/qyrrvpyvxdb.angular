@@ -2,11 +2,21 @@
 
 mat-list-option {
   margin: 10px;
+ background-color: #eee;
 }
 
 mat-list-option[aria-selected="true"] {
   background: rgba(133, 215, 230, 0.753);
 }
+
+
+mat-list-item {
+  margin: 10px;
+ background-color: #eee;
+}
+
+
+
 
 .selected {
   background-color: rgb(207, 220, 212) !important;
@@ -36,7 +46,7 @@ mat-list-option[aria-selected="true"] {
 .heroes li:hover {
   color: rgb(51, 207, 121);
   background-color: rgb(207, 30, 30);
-  left: .1em;
+  left: .2em;
 }
 
 .heroes a {
@@ -49,8 +59,8 @@ mat-list-option[aria-selected="true"] {
 }
 
 .heroes a:hover {
-  color:rgb(204, 25, 150);
-  left: .1em;
+  color:rgb(43, 144, 190);
+  left: .2em;
 }
 
 
@@ -61,7 +71,7 @@ mat-list-option[aria-selected="true"] {
   padding: 0.8em 0.7em 0 0.7em;
   background-color: rgb(38, 137, 187);
   line-height: 1em;
-  position: relative;
+  position: lef;
   left: -1px;
   top: -4px;
   height: 2.8em;
