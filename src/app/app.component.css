@@ -5,7 +5,7 @@
 }
 .mat-tab-link-active,
 .mat-tab-label-active {
-    background-color: rgb(214, 223, 248) ;
+    background-color: rgba(133, 215, 230, 0.753);
     color: rgb(5, 28, 29);
     border: 0px solid #6B7F7F;
     font-weight: bold;
@@ -60,7 +60,7 @@ nav a {
   border-radius: 4px;
 }
 nav a:visited, a:link {
-  color: #607D8B;
+  color: rgb(2, 16, 22);
 }
 nav a:hover {
   color: #039be5;

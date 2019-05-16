@@ -59,7 +59,7 @@ mat-list-item {
 }
 
 .heroes a:hover {
-  color:rgb(43, 144, 190);
+  color: #039be5;
   left: .2em;
 }
 
@@ -71,7 +71,7 @@ mat-list-item {
   padding: 0.8em 0.7em 0 0.7em;
   background-color: rgb(38, 137, 187);
   line-height: 1em;
-  position: lef;
+  position: ;
   left: -1px;
   top: -4px;
   height: 2.8em;
