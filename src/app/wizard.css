@@ -1,4 +1,10 @@
-.container {
+.row {
+ font-weight: bold;
+    display:flex;
+  justify-content:center;
+}
+
+.container, .jumbotron {
   width: 60em;
 
 }
