@@ -1,14 +1,22 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-
+import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 /**
  * @title Stepper overview
  */
 @Component({
   selector: 'wizard',
+  
   templateUrl: 'wizard.html',
  styleUrls: ['wizard.css'],
+  providers: [
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: { displayDefaultIndicatorType: false }
+    }
+  ]
 })
+
 export class Wizard implements OnInit {
   isLinear = false;
   firstFormGroup: FormGroup;

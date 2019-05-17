@@ -8,10 +8,15 @@
 
 
     <form [formGroup]="firstFormGroup">
-      <ng-template matStepLabel >
-       </ng-template>
+   
+   <ng-template matStepperIcon="done">
+    <mat-icon>insert_drive_file</mat-icon>
+  </ng-template>
+
 
 <legend> Select rules to include for analysis</legend><BR>
+
+
 
 <rules-analysis></rules-analysis>
 
@@ -54,7 +59,8 @@
         </label>
       </div>
 
-    
+    <br><br>
+
     </fieldset>
 
     
@@ -65,15 +71,23 @@
 
 
       
-      <div>
-        <button mat-button matStepperPrevious class="btn btn-outline-secondary">Back</button><span> </span>
+       <div class="row">
 
-        
+    <div class="col-2">
 
-          <button type="button" class="btn btn-primary" matStepperNext>Start Analysis</button>
+    
+
+    <button type="button" class="btn btn-outline-secondary btn-lg" matStepperPrevious>Back</button>
+
+        </div>
+
+    <div class="col-3">
+
+
+          <button type="button" class="btn btn-primary btn-lg" matStepperNext>Start Analysis</button>
       
       </div>
-
+ </div>
 
 
     </form>
@@ -93,10 +107,10 @@
 
 <br><br>
 
-    <div>
+    <div class="row">
 
 
-  <a routerLink="/summary" class="btn btn-primary">View Results</a>
+  <a routerLink="/summary" class="btn btn-primary btn-lg">View Results</a>
 
       
     </div>
