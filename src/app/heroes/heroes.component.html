@@ -50,15 +50,49 @@
 
 <br>
 
+
+
 <div>
-  <label>
-    <input #heroName placeholder="New rule">
-  </label>
+    <label>  </label>
+   <input #heroName placeholder="New rule">
+
   <!-- (click) passes input value to add() and then clears the input -->
   <button class="btn btn-primary"  (click)="add(heroName.value); heroName.value=''">
     Add
   </button>
-</div>
+  </div>
+
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Outline form field</mat-label>
+    <input matInput placeholder="Placeholder">
+  
+  </mat-form-field>
+</p>
+
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Outline form field
+    <input matInput #heroName placeholder="Placeholder">
+    </mat-label>
+  
+
+    <button class="btn btn-primary"  (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+  </mat-form-field>
+</p>
+
+
+<!-- <div>
+  <label>  </label>
+    <input #heroName placeholder="New rule">
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <!-- <button class="btn btn-primary"  (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+</div> --> -->
 
 
 
