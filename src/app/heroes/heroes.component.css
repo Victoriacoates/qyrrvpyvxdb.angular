@@ -67,12 +67,12 @@ mat-list-item {
   position: relative;
   cursor: pointer;
   background-color: rgb(238, 238, 238);
-  margin: .5em;
-  padding: .3em 0;
+  /* margin: .5em;
+  padding: .3em 0; */
 
-  height: 2.4em;
+  /* height: 2.4em; */
 
-  border-radius: 4px;
+  /* border-radius: 4px; */
 
 
 }
@@ -85,7 +85,7 @@ mat-list-item {
 
 .heroes a {
 
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
   text-decoration: none;
   position: relative;
   display: block;
@@ -117,17 +117,17 @@ mat-list-item {
   border-radius: 4px 0 0 4px;
 }
 
-/* button {
-  background-color: #eee;
+button {
+  /* background-color: #eee;
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
-  cursor: hand;
+  cursor: hand; */
   font-family: Arial;
 }
 
-button:hover {
+/* button:hover {
   background-color: #cfd8dc;
 } */
 
