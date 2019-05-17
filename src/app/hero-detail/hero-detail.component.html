@@ -36,7 +36,7 @@
     
           <!-- <small class=" form-text text-muted">The rule is defined in JavaScript. The editor provides highlighting and syntax checking</small> -->
         
-          <small class=" form-text">The rule is defined in JavaScript. The editor provides highlighting and syntax checking</small>
+          <small class="form-text">Create compliance & non-compliance rules from the available assets] below. / to the right ]]] The rule is defined in JavaScript.</small>
 
       <textarea class="form-control" id="exampleTextarea" rows="6" >
 
@@ -51,19 +51,42 @@
 
 
 
+<div class="form-group">
+       
+         <label>Asset Schema
+
+        
+     <small class="form-text">Available attributes relevant for this rule</small>
+
+      <textarea class="form-control" rows="6" >
+
+certificateBatchNumber
+
+hasPaperCertificateUploaded
+
+creationDate
+expiryDate
+
+exportCountry
+exportDate
+
+verifiedBy
+verifierDetails
+verifyDate
+
+Origin ]]]
+
+weight
+shippedDate
+
+
+      </textarea>
+  </label>
+
+    </div> 
 
 
 
-
-
-
-
-
-<div class="container">
-<label>Asset Schema<input [(ngModel)]="hero.assets" placeholder="Default assets"/>
-
-    </label>
-</div>
 
 
 
