@@ -4,10 +4,18 @@
   justify-content:center;
 }
 
+mat-horizontal-stepper {
+min-height: 400px;
+
+display: flex;
+  flex-direction: column;
+}
+
 .container, .jumbotron {
  
-  
+
    width: 70em;
+
 
 }
 

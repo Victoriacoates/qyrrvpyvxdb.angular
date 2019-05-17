@@ -12,8 +12,8 @@
 }
 .mat-tab-link,
 .mat-tab-label {
-    line-height: 30px !important;
-    height: 30px !important;
+    line-height: 45px !important;
+    height: 40px !important;
     min-width: 100px !important;
     border: 0px solid #7e7e7e;
 }
