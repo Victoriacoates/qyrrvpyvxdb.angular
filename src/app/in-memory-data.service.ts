@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 1, name: 'Processor – Machines have up to date National Sanitation Foundation Certification', description: 'example description', jsdefinition: 'default code test', assets: 'default assets test' },
+      { id: 1, name: 'Processor – Machines have up to date National Sanitation Foundation Certification', description: 'example description', jsdefinition: 'default code test', assets: 'dfgdfg, dfgdfg, dfgdfg' },
       { id: 2, name: 'Distribution Center – Facility has up to date Hazard Analysis Critical Control Points Certification' },
       { id: 3, name: 'Retail Store – Facility has up to date Fumigation Certification' },
       { id: 4, name: 'Identity Counterfeit Packages' },

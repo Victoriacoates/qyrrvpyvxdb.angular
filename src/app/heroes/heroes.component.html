@@ -1,25 +1,22 @@
 
-Blockchain Solution: ____
+<legend>
+  
+  Blockchain Solution: Food Tracking Channel
 
-<mat-divider></mat-divider><br>
+</legend>
 
+<mat-divider></mat-divider>
+
+<label class="col-form-label col-form-label-lg" for="inputLarge">
+  My Rules </label>
 <h2>My Rules</h2>
 
 <div>
   <app-hero-search></app-hero-search>
 </div>
 
-<mat-divider></mat-divider><br>
+<mat-divider></mat-divider>
 
-<div>
-  <label>Rule name:
-    <input #heroName />
-  </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''">
-    add
-  </button>
-</div>
 
 
 
@@ -50,6 +47,19 @@ Blockchain Solution: ____
 </mat-nav-list>
 
 </ul>
+
+<br>
+
+<div>
+  <label>
+    <input #heroName placeholder="New rule">
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(heroName.value); heroName.value=''">
+    add
+  </button>
+</div>
+
 
 
 wizard -done
