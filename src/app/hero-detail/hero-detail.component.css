@@ -12,7 +12,7 @@ label {
   padding-left: .4em;
   width: 60em;
 } */
-button {
+/* button {
   margin-top: 20px;
   font-family: Arial;
   background-color: #eee;
@@ -20,8 +20,8 @@ button {
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer; cursor: hand;
-}
-button:hover {
+} */
+/* button:hover {
   background-color: #cfd8dc;
 }
 button:disabled {
@@ -29,7 +29,7 @@ button:disabled {
   color: #ccc;
   cursor: auto;
 
-}
+} */
 
 /*
 Copyright Google LLC. All Rights Reserved.
