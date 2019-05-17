@@ -76,137 +76,33 @@ verifyDate
 
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<form>
-  <div class="form-row">
-
-    <div class="form-group col-md-8">
-
-       
-         <label>Rule Definition
-    
-          <!-- <small class=" form-text text-muted">The rule is defined in JavaScript. The editor provides highlighting and syntax checking</small> -->
-        
-          <small class="form-text text-center">Create compliance rules from available assets on the right.<br>
-           When the conditions are satisified the document on blockchain will be compliant.<br>
-</small>
-
-      <textarea class="form-control" id="exampleTextarea" rows="6" >
-IF facility in participatingLocations AND hasPaperCertificateUploaded is TRUE
-  IF facility not in participatingLocations
-     return true;
-
-
-      </textarea>
-
-      <small class="form-text text-center">The rule is defined in JavaScript.</small>
-  </label>
-
-
-
-    </div>
-
-
-
-
-    <div class="form-group col-md-16">
-      
-     
-         <label>Asset Schema </label>
-        
-     <small class="form-text">Available attributes relevant for this rule</small>
-
-
-
-
-
-
-    </div>
-
-  </div>
-</form>
-
-
-
-
-<form>
-  <div class="form-row">
-
-    <div class="form-group col-6">
-      <label for="inputEmail4">Email</label>
-
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-
-    </div>
-
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-    </div>
-
-  </div>
-
-</form>
-
-
-
-
-
-  <div class="row">
-    <div class="col-8">col-8</div>
-
-    <div class="col-4">
-      
-
-kjbjb
-
-
-    </div>
-  </div>
-
-
 </div>
 
 <div class="container">
 
 
- <button class="btn btn-secondary" (click)="goBack()">Return to all rules</button>
-
- <span class="example-fill-remaining-space"></span>    
-
-  <button class="btn btn-primary"  (click)="save()">save</button>
-
-  <button class="delete" title="delete hero"
-      (click)="delete(this.hero)">delete</button>
-
-
-
-
-</div>
 
 <div class="row">
-    <div class="col">col</div>
-    <div class="col">col</div>
+    <div class="col-3">
+      
+ <button class="btn btn-secondary" (click)="goBack()">Return to all rules</button> 
+
+    </div>
+    <div class="col-2">
+      <button class="btn btn-primary"  (click)="save()">save</button>
+
+    </div>
     <!-- <div class="col">col</div> -->
-    <div class="col">col</div>
+    <div class="col-2">
+
+
+  <button class="btn btn-secondary delete" title="delete hero"
+      (click)="delete(this.hero)">delete</button>
+    </div>
   </div>
 
 </div>
-
+</div>
 
 
 
