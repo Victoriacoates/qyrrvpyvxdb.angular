@@ -36,15 +36,19 @@
     
           <!-- <small class=" form-text text-muted">The rule is defined in JavaScript. The editor provides highlighting and syntax checking</small> -->
         
-          <small class="form-text">Create compliance & non-compliance rules from the available assets] below. / to the right ]]] The rule is defined in JavaScript.</small>
+          <small class="form-text">Create compliance rules from available assets t the right.<br>
+           When the conditions are satisified the document on blockchain will be compliant.<br>
+</small>
 
       <textarea class="form-control" id="exampleTextarea" rows="6" >
+IF facility in participatingLocations AND hasPaperCertificateUploaded is TRUE
+  IF facility not in participatingLocations
+     return true;
 
-  IF exportCountry in participatingCountries AND hasPaperKBCUploaded is TRUE
-
-  IF exportCountry not in participatingCountries
 
       </textarea>
+
+      <small class="form-text">The rule is defined in JavaScript.</small>
   </label>
 
     </div> 
@@ -59,11 +63,13 @@
      <small class="form-text">Available attributes relevant for this rule</small>
 
       <textarea class="form-control" rows="6" >
+location
 certificateType
 certificateBatchNumber
 hasPaperCertificateUploaded
 creationDate
 expiryDate
+facility
 facilityType
 facilityLocation
 verifiedBy
