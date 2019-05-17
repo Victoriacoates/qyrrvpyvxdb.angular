@@ -115,7 +115,7 @@ mat-list-item {
   border-radius: 4px 0 0 4px;
 }
 
-button {
+/* button {
   background-color: #eee;
   border: none;
   padding: 5px 10px;
@@ -127,7 +127,7 @@ button {
 
 button:hover {
   background-color: #cfd8dc;
-}
+} */
 
 button.delete {
   position: relative;
