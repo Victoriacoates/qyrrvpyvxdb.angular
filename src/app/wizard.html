@@ -1,6 +1,6 @@
 
-
-<div class="jumbotron mat-elevation">
+<div class="row">
+<div class="jumbotron">
 <!--   
 <div class="container mat-elevation-z8"> -->
 <mat-horizontal-stepper [linear]="isLinear" #stepper>
@@ -9,24 +9,23 @@
 
     <form [formGroup]="firstFormGroup">
    
-   <ng-template matStepperIcon="done">
+   <ng-template matStepperIcon>
     <mat-icon>insert_drive_file</mat-icon>
   </ng-template>
 
+<div class="row">
 
-<legend> Select rules to include for analysis</legend><BR>
+<h3> Select rules to include for analysis</h3><BR>
 
-
+</div>
 
 <rules-analysis></rules-analysis>
 
 <app-heroes></app-heroes>
 
-<!-- <table-basic-example></table-basic-example> -->
-
 
  <br><br>
-
+<!-- </div> -->
 
 
       <div class="row">
@@ -40,11 +39,19 @@
 
   
   <mat-step [stepControl]="secondFormGroup">
-        <ng-template matStepLabel>
-
-        </ng-template>
+    
+   <ng-template matStepperIcon>
+    <mat-icon>insert_drive_file</mat-icon>
+  </ng-template>
     
     <fieldset class="form-group">
+
+<div class="row">
+      <div class="example-container">
+
+
+        <h3> Select rules to include for analysis</h3><BR>
+
       <legend>Asset Selection</legend>
       <div class="form-check">
         <label class="form-check-label">
@@ -58,7 +65,7 @@
           Analyze whole ledger
         </label>
       </div>
-
+</div></div>
     <br><br>
 
     </fieldset>
@@ -100,20 +107,27 @@
 
     </ng-template>
    
+
+    <div class="row">
+      <div class="example-container">
+  <div class="row">
+
+    <h3>Analysis Progress</h3><BR>
+
    <legend>Analysis Progress</legend>
 
 
 <mat-spinner></mat-spinner>
 
 <br><br>
+</div>
+ </div></div>
 
-    <div class="row">
-
-
+<div class="row">
   <a routerLink="/summary" class="btn btn-primary btn-lg">View Results</a>
-
+</div>
       
-    </div>
+   
   </mat-step>
 </mat-horizontal-stepper>
 

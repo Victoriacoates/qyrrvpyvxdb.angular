@@ -1,11 +1,11 @@
 .row {
- font-weight: bold;
-    display:flex;
+ /* font-weight: bold; */
+    /* display:flex; */
   justify-content:center;
 }
 
 .container, .jumbotron {
-  width: 60em;
+  width: 70em;
 
 }
 
@@ -13,7 +13,9 @@
   display: flex;
   flex-direction: column;
   max-height: 600px;
-    width: 60em;
+    width: 300px;
+
+   justify-content:center;
   /* max-width: 800px;
   min-width: 800px; */
 }
