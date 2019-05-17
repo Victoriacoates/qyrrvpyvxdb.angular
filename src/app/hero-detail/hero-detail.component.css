@@ -5,21 +5,27 @@
 } */ *
 
 .form-control {
-  color: black;
+  /* color: black; */
   font-family: arial;
 }
   
-  
+textarea {
+  color: gray;
+    font-size: 13px;
+font-style: italic;
+}
+
 
 
 body, input[text] {
 
   font-family: arial;
+  color:
 }
 
 
 .row {
-
+ font-weight: bold;
     display:flex;
   justify-content:center;
 }
