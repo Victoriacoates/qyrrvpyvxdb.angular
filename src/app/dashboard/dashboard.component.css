@@ -7,16 +7,22 @@ border-radius: 8px;
 }
 
 
+mat-card {
+  border-radius: 8px;
+   width: 70em;
+}
+
 .row {
  /* font-weight: bold; */
     /* display:flex; */
   justify-content:center;
+  width: auto;
 }
 
 h6  {
   /* font-style: italic; */
    color: gray;
-  font-size: 13px;
+  font-size: 14px;
 
 }
 
