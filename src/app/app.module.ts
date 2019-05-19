@@ -38,10 +38,6 @@ import { SummaryComponent } from './summary/summary.component';
 
 import {DividerComponent} from './extras/divider.component';
 
-import { InputOverviewExample } from './input-overview-example';
-
-import { SelectMultipleExample} from './wizard/select-multiple-example';
-
 
 
 
@@ -74,9 +70,8 @@ import { Wizard } from './wizard';
     )
   ],
   declarations: [
-    InputOverviewExample,
 
-    SelectMultipleExample,
+
 
     HeaderComponent,
     FooterComponent,
