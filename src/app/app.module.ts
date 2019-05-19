@@ -44,11 +44,9 @@ import { SelectMultipleExample} from './wizard/select-multiple-example';
 
 
 
-import {TableBasicExample} from './table-basic-example';
 
 import { Wizard } from './wizard';
 
-import { RulesAnalysis } from './rules-analysis';
 
 
 
@@ -88,7 +86,7 @@ import { RulesAnalysis } from './rules-analysis';
 
     DividerComponent,
 
-    TableBasicExample,
+
     Wizard,
     
   
@@ -99,7 +97,7 @@ import { RulesAnalysis } from './rules-analysis';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    RulesAnalysis,
+
   ],
   bootstrap: [ AppComponent ]
 })
