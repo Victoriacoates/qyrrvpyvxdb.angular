@@ -53,16 +53,18 @@
 
 
 
-<p>
+
   <mat-form-field appearance="outline">
     <mat-label>Create new rule </mat-label>
     <input matInput #heroName placeholder="Rule name">
   
   </mat-form-field>
+    
+
     <button class="btn btn-primary"  (click)="add(heroName.value); heroName.value=''">
     Add
   </button>
-</p>
+
 
   </div>
 </div>
