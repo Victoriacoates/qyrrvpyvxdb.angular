@@ -21,7 +21,6 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { AppRoutingModule, Routes }     from './app-routing.module';
 import { MdTabsModule } from '@angular/material';
 
-import { HeaderComponent } from './extras/header.component';
 import { FooterComponent } from './extras/footer.component';
 
 
@@ -36,7 +35,6 @@ import { MessagesComponent }    from './messages/messages.component';
 import { AnalysisComponent } from './analysis/analysis.component';
 import { SummaryComponent } from './summary/summary.component';
 
-import {DividerComponent} from './extras/divider.component';
 
 
 
@@ -73,13 +71,10 @@ import { Wizard } from './wizard';
 
 
 
-    HeaderComponent,
     FooterComponent,
 
     AnalysisComponent,
     SummaryComponent,
-
-    DividerComponent,
 
 
     Wizard,
