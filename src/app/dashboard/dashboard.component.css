@@ -1,3 +1,10 @@
+.row {
+ font-weight: bold;
+    display:flex;
+  justify-content:center;
+}
+
+
 /* DashboardComponent's private CSS styles */
 [class*='col-'] {
   float: left;
