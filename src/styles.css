@@ -1,4 +1,15 @@
 
+button {
+  /* background-color: #eee;
+  border: none; */
+  /* padding: 5px 10px; */
+  border-radius: 4px; 
+
+  font-family: georgia;
+}
+
+
+
 body {
   min-height: 100%;
   position: relative;
@@ -75,10 +86,10 @@ nav a {
   border-radius: 4px;
 }
 
-button {
+/* button {
   font-family: Arial;
 
-}
+} */
 
 
 example-fill-remaining-space {

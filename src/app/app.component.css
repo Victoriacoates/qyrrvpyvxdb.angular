@@ -1,8 +1,14 @@
+Mat-toolbar {
 
-{
+background-color: rgba(133, 215, 230, 0.753);
+}
+
+
+
+/* {
     display: inline-block !important;
     width: 100%;
-}
+} */
 .mat-tab-link-active,
 .mat-tab-label-active {
     background-color: rgba(133, 215, 230, 0.753);

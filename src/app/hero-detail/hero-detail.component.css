@@ -1,3 +1,13 @@
+button {
+  /* background-color: #eee;
+  border: none; */
+  /* padding: 5px 10px; */
+  border-radius: 4px; 
+
+  font-family: arial;
+}
+
+
 /* .example-fill-remaining-space {
   /* This fills the remaining space, by using flexbox. 
      Every toolbar row uses a flexbox row layout. */
@@ -44,10 +54,7 @@ label {
   width: 60em;
 } */
 
-button, .btn {
-  font-family: Arial;
 
-}
 
 /*
 Copyright Google LLC. All Rights Reserved.
