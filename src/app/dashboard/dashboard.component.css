@@ -4,6 +4,17 @@
   justify-content:center;
 }
 
+h6  {
+  /* font-style: italic; */
+   color: gray;
+  font-size: 13px;
+
+}
+
+.display-4 {
+font-style: italic
+
+}
 
 /* DashboardComponent's private CSS styles */
 [class*='col-'] {
