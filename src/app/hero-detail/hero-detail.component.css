@@ -16,7 +16,7 @@ button {
 
 .form-control {
   /* color: black; */
-  font-family: arial;
+  font-family: Helvetica Neue;
 }
   
 textarea {
@@ -29,7 +29,7 @@ font-style: italic;
 
 body, input[text] {
 
-  font-family: arial;
+  font-family: georgia;
   color:
 }
 
