@@ -1,11 +1,75 @@
 
-<!-- <h3>
- Blockchain Solution:
-  <small class="text-muted">Food Tracking Channel</small>
-</h3> -->
+<div class="card bg-light border"  style="border-radius: 4px">
+  <div class="card-header">
+    
+   <legend>
+  
+  Blockchain Solution: <span class="text-muted">Food Tracking Channel</span></legend>
+  </div>
+  <div class="card-body bg-white">
+
+     <p class="m-0 text-center">
+
+<div>
+  <app-hero-search></app-hero-search>
+</div>
+
+<mat-divider></mat-divider>
+
+
+
+
+<!-- **original version of Rules List** 
+ <ul class="heroes" >
+  <li *ngFor="let hero of heroes" >
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    
+    
+  </li>
+</ul>  -->
+
+
+
+
+<ul class="heroes">
+  
+<mat-nav-list>
+  <mat-list-item *ngFor="let hero of heroes">
+    
+     <a routerLink="/detail/{{hero.id}}" >
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+
+  </mat-list-item>
+</mat-nav-list>
+
+</ul>
+
+<br>
+
+
+
+
+
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Create new rule </mat-label>
+    <input matInput #heroName placeholder="Rule name">
+  
+  </mat-form-field>
+    <button class="btn btn-primary"  (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+</p>
+
+  </div>
+</div>
+
 
 <mat-card>
-  
+
 <legend>
   
   Blockchain Solution: <span class="text-muted">Food Tracking Channel</span>
