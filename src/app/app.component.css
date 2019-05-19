@@ -1,9 +1,9 @@
 Mat-toolbar {
 
-background-color:#325c80;
+background-color: #325c80;
 color: white;
+  font-family: Helvetica Neue;
 }
-
 
 
 /* {
@@ -12,7 +12,7 @@ color: white;
 } */
 .mat-tab-link-active,
 .mat-tab-label-active {
-    background-color: rgba(133, 215, 230, 0.753);
+    background-color:rgba(38, 137, 187, 0.247);
     color: rgb(5, 28, 29);
     border: 0px solid #6B7F7F;
     font-weight: bold;

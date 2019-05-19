@@ -23,7 +23,7 @@ mat-list-option {
 }
 
 mat-list-option[aria-selected="true"] {
-  background: rgba(133, 215, 230, 0.753);
+  background:rgba(38, 137, 187, 0.377);
 }
 
 
@@ -61,7 +61,7 @@ mat-list-item {
   padding: 0;
   width: 55em;
   
-    font-family: arial;
+    font-family: georgia;
 
 }
 .heroes li {
