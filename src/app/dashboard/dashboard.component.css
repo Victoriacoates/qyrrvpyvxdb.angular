@@ -1,15 +1,15 @@
 .jumbotron {
  
 
-   width: 70em;
+   width: 2500px;
 
 
 }
 
 
 .row {
- font-weight: bold;
-    display:flex;
+ /* font-weight: bold; */
+    /* display:flex; */
   justify-content:center;
 }
 
