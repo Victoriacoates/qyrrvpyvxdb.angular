@@ -1,0 +1,142 @@
+
+.row {
+ font-weight: bold;
+    display:flex;
+  justify-content:center;
+}
+
+mat-list-option {
+  margin: 10px;
+ background-color: #eee;
+ 
+ 
+  padding: .3em 0;
+
+  height: 2.4em;
+
+  border-radius: 4px;
+
+   float: right;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+Font-family: Helvetica Neue ;
+
+}
+
+mat-list-option[aria-selected="true"] {
+  background:rgba(38, 137, 187, 0.377);
+}
+
+
+mat-list-item {
+  margin: 10px;
+ background-color: #eee;
+
+ position: relative;
+
+
+  padding: .3em 0;
+
+  height: 2.4em;
+
+  border-radius: 4px;
+
+   float: right;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+ 
+}
+
+
+
+
+
+
+
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 55em;
+  
+    font-family: georgia;
+
+}
+.heroes li {
+  position: relative;
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
+  /* margin: .5em;
+  padding: .3em 0; */
+
+  /* height: 2.4em; */
+
+  /* border-radius: 4px; */
+
+
+}
+
+.heroes li:hover {
+  color: rgb(51, 207, 121);
+  background-color: rgb(207, 30, 30);
+  left: .2em;
+}
+
+.heroes a {
+
+  /* color: rgb(0, 0, 0); */
+  text-decoration: none;
+  position: relative;
+  display: block;
+
+  /* width: 450px; */
+ 
+}
+
+.heroes a:hover {
+  color: #039be5;
+  left: .2em;
+}
+
+
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: rgb(38, 137, 187);
+  line-height: 1em;
+  position: ;
+  left: -1px;
+  top: -4px;
+  height: 2.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+
+button {
+  /* background-color: #eee;
+  border: none; */
+  /* padding: 5px 10px; */
+  border-radius: 4px; 
+
+  font-family: "Helvetica Neue";
+
+  margin-left: 12px;
+ ;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

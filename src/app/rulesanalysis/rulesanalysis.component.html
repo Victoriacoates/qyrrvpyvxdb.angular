@@ -1,0 +1,31 @@
+
+wizard -done
+
+
+<ul class="heroes">
+<mat-selection-list  [(ngModel)]="selectedOptions" (ngModelChange)="onNgModelChange($event)">
+    <mat-list-option *ngFor="let hero of heroes" [value]="hero.name">
+
+       <a >
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+
+    
+    </mat-list-option>
+</mat-selection-list>
+</ul>
+
+
+
+
+<br>
+<div><p><strong>
+  Selected rules: 
+</strong></p>
+
+<mat-divider></mat-divider>
+<br>
+
+<p class="lead">{{ selectedOptions | json }}</p>
+
+</div>
