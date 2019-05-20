@@ -56,7 +56,6 @@ import { Wizard } from './wizard';
 
     MaterialModule,
 
-
     NgbModule.forRoot(),
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
@@ -78,8 +77,6 @@ RulesAnalysisComponent,
 
     Wizard,
     
-  
-  
     AppComponent,
     DashboardComponent,
     HeroesComponent,
