@@ -34,7 +34,7 @@ import { MessagesComponent }    from './messages/messages.component';
 import { AnalysisComponent } from './analysis/analysis.component';
 import { SummaryComponent } from './summary/summary.component';
 
-
+import { RulesAnalysisComponent } from './rulesanalysis/rulesanalysis.component';
 
 
 
@@ -68,7 +68,7 @@ import { Wizard } from './wizard';
   ],
   declarations: [
 
-
+RulesAnalysisComponent,
 
     FooterComponent,
 
