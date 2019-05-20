@@ -17,7 +17,6 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 
-
 import { AppRoutingModule, Routes }     from './app-routing.module';
 import { MdTabsModule } from '@angular/material';
 
